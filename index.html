@@ -1,0 +1,52 @@
+<div
+    style="font-family: Arial, sans-serif; padding: 20px; background-color: #100e0e; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); max-width: 700px; margin: auto;">
+
+    <h2 style="color: #e04d00;">💼 Sistema de Ventas e Inventarios</h2>
+
+    <p>
+        Este sistema está diseñado para gestionar de forma eficiente tus ventas, productos e inventario.
+        Ideal para negocios que buscan una herramienta simple, funcional y lista para usar desde Windows.
+    </p>
+
+    <ul>
+        <li>✅ Registro de productos con stock</li>
+        <li>✅ Control de ventas con historial</li>
+        <li>✅ Base de datos local (SQLite)</li>
+        <li>✅ Interfaz amigable y portable</li>
+    </ul>
+
+    <hr>
+
+    <p style="margin-top: 20px;">
+        🔗 <strong>Repositorio en GitHub:</strong><br>
+        <a href="https://github.com/javierriosr/sistema-ventas" target="_blank"
+            style="display: inline-flex; align-items: center; text-decoration: none; color: #bfc6ce; font-weight: bold;">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/github.svg" alt="GitHub"
+                style="width: 20px; height: 20px; margin-right: 8px;">
+            javierriosr/sistema-ventas
+        </a>
+    </p>
+
+    <hr>
+
+    <p style="margin-top: 20px;">
+        🔐 <strong>Contraseña de instalación:</strong>
+        <input type="text" value="elmenudeyosef.com" id="clave" readonly
+            style="margin-left: 10px; padding: 5px; width: 200px;">
+        <button onclick="copiarClave()"
+            style="padding: 5px 10px; background-color: #e04d00; color: white; border: none; border-radius: 5px; cursor: pointer;">
+            Copiar
+        </button>
+    </p>
+
+    <script>
+        function copiarClave() {
+            var input = document.getElementById("clave");
+            input.select();
+            input.setSelectionRange(0, 99999); // Móviles
+            document.execCommand("copy");
+            alert("Contraseña copiada: " + input.value);
+        }
+    </script>
+
+</div>
