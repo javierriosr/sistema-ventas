@@ -29,24 +29,11 @@
 
     <hr>
 
-    <p style="margin-top: 20px;">
-        🔐 <strong>Contraseña de instalación:</strong>
-        <input type="text" value="elmenudeyosef.com" id="clave" readonly
-            style="margin-left: 10px; padding: 5px; width: 200px;">
-        <button onclick="copiarClave()"
-            style="padding: 5px 10px; background-color: #e04d00; color: white; border: none; border-radius: 5px; cursor: pointer;">
-            Copiar
-        </button>
-    </p>
-
-    <script>
-        function copiarClave() {
-            var input = document.getElementById("clave");
-            input.select();
-            input.setSelectionRange(0, 99999); // Móviles
-            document.execCommand("copy");
-            alert("Contraseña copiada: " + input.value);
-        }
-    </script>
+    <div style="text-align: center; margin-top: 30px;">
+        <a href="https://github.com/javierriosr/sistema-ventas" download
+            style="background-color: #e04d00; color: white; padding: 12px 25px; border-radius: 8px; font-weight: bold; text-decoration: none; display: inline-block; box-shadow: 0 4px 6px rgba(0,0,0,0.2); transition: background-color 0.3s;">
+            📥 Descargar Sistema
+        </a>
+    </div>
 
 </div>
